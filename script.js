@@ -20,10 +20,10 @@ const dagensRattElement = document.createElement('h3');
 const ingredienserElement = document.createElement('p');
 const prisElement = document.createElement('h4');
 
-veckoDagElement.value = veckoDag;
-dagensRattElement.value = dagensRatt;
-ingredienserElement.value = ingredienser;
-prisElement.value = pris;
+veckoDagElement.textContent = veckoDag;
+dagensRattElement.textContent = dagensRatt;
+ingredienserElement.textContent = ingredienser;
+prisElement.textContent = pris + " kr";
 
 // 3. Alla nya element publiseras via appendChild till diven
 
@@ -35,5 +35,12 @@ articleElement.appendChild(prisElement);
 const menuDiv = document.getElementById('menu');
 
 menuDiv.appendChild(articleElement);
+
+// veckoDag.value =" ";
+document.getElementById("weekDay").value="";
+document.getElementById("todayDish").value="";
+document.getElementById("contentDish").value="";
+document.getElementById("priceDish").value="";
+
 }
 
