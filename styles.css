@@ -7,13 +7,13 @@ body {
     background-size: cover;
     overflow: hidden;
     display: flex;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -33,16 +33,20 @@ body {
     height: fit-content;
     background-color: antiquewhite;
     display: flex;
+    border-radius: 5px;
 }
 
 .weekMenu {
-    border: 2px solid pink;
-    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 h1 {
     padding: 2rem;
 }
+
 #theForm {
     background-color: #343434;
     color: antiquewhite;
@@ -50,30 +54,36 @@ h1 {
     padding: 3rem;
     max-width: 100%;
     flex-direction: column;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 
 label {
     margin-bottom: 5%;
 }
 
-input{
+input {
     margin-bottom: 15%;
     border: 1px solid antiquewhite;
+    color: antiquewhite;
     border-radius: 10px;
     background-color: #343434;
     padding: 3%;
     width: 100%;
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    ;
 }
 
 input:hover {
-    box-shadow: 0 0 10px #DADDB1; 
-}   
+    box-shadow: 0 0 10px #DADDB1;
+}
 
 @keyframes expandAnimation {
     0% {
         width: 0%;
     }
+
     25% {
         width: 25%;
     }
@@ -89,5 +99,43 @@ input:hover {
 
 input:focus {
     animation: expandAnimation 0.3s forwards;
+}
 
+button {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin: 10% 0;
+    border: 1px solid antiquewhite;
+    color: antiquewhite;
+    border-radius: 10px;
+    background-color: #343434;
+    padding: 5% 10%;
+    margin: 0 auto;
+}
+
+button:hover {
+    animation: buttonExpand 1s forwards;
+    cursor: pointer;
+}
+
+@keyframes buttonExpand {
+    0% {
+        border-left: 1px solid gold;
+    }
+
+    25% {
+        border-top: 1px solid gold;
+    }
+
+    50% {
+        border-right: 1px solid gold;
+    }
+
+    75% {
+        border-bottom: 1px solid gold;
+    }
+
+    100% {
+        font-weight: bolder;
+    }
 }
