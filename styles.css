@@ -63,10 +63,12 @@ input{
     background-color: #343434;
     padding: 3%;
     width: 100%;
+    transition: box-shadow 0.3s;
 }
 
 input:hover {
-}
+    box-shadow: 0 0 10px #DADDB1; 
+}   
 
 @keyframes expandAnimation {
     0% {
@@ -86,7 +88,6 @@ input:hover {
 }
 
 input:focus {
-    border-color: #99B080;
     animation: expandAnimation 0.3s forwards;
 
 }
