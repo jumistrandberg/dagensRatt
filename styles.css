@@ -7,6 +7,9 @@ body {
     background-size: cover;
     overflow: hidden;
     display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+
 }
 
 .wrapper{
@@ -25,13 +28,25 @@ body {
     width: 100%;
 }
 
-.weekMenu {
+.container {
+    border: 1px solid green;
+    height: fit-content;
     background-color: antiquewhite;
+    display: flex;
 }
 
+.weekMenu {
+    border: 2px solid pink;
+    
+}
+
+h1 {
+    padding: 2rem;
+}
 #theForm {
     border: 1px solid blue;
     background-color: #343434;
+    color: antiquewhite;
     display: flex;
     padding: 2rem;
     max-width: 100%;
@@ -41,4 +56,8 @@ body {
 label {
     border: 1px solid green;
     margin-bottom: 5%;
+}
+
+input{
+    margin-bottom: 10%;
 }
