@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Boiler room/dagensRatt/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- styla med flexbox column (eller något) för att snygga till våra inre div'ar-->
+      <div class="weekMenu">
+        <h1>Veckans Meny</h1>
+        <!--här kommer innehållet från JS publiceras via appendChild
+        Elementen som kommer användas är h2, h3, p, h4 - de kan stylas-->
+    </div>
+
+      <div class="form">
+        <label for="weekDay"></label>
+        <input id="weekDay" type="text">
+        <label for="todayDish"></label>
+        <input id="todayDish" type="text">
+        <label for="contentDish"></label>
+        <input id="contentDish" type="text">
+        <label for="priceDish"></label>
+        <input id="priceDish" type="number">
+        <button id="sendDish">Skicka</button>
+      </div>
+    </div>
+
+    <script src="/Boiler room/dagensRatt/script.js"></script>
+  </body>
+</html>
