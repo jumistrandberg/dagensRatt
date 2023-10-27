@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="wrapper">
+    <section class="wrapper">
       <!-- styla med flexbox column (eller något) för att snygga till våra inre div'ar-->
       <div class="weekMenu">
         <h1>Veckans Meny</h1>
@@ -15,18 +15,18 @@
         Elementen som kommer användas är h2, h3, p, h4 - de kan stylas-->
     </div>
 
-      <div class="form">
-        <label for="weekDay"></label>
+    <form id="theForm">
+        <label for="weekDay">Veckodag:</label>
         <input id="weekDay" type="text">
-        <label for="todayDish"></label>
+        <label for="todayDish">Dagens rätt:</label>
         <input id="todayDish" type="text">
-        <label for="contentDish"></label>
+        <label for="contentDish">Innehåll:</label>
         <input id="contentDish" type="text">
-        <label for="priceDish"></label>
+        <label for="priceDish">Pris:</label>
         <input id="priceDish" type="number">
         <button id="sendDish">Skicka</button>
-      </div>
-    </div>
+    </form>
+</section>
 
     <script src="/Boiler room/dagensRatt/script.js"></script>
   </body>
