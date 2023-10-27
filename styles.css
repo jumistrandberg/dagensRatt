@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 
-#dagensForm {
+#theForm {
     max-width: 100%;
     border: 1px solid blue;
     display: flex;
