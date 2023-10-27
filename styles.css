@@ -9,6 +9,7 @@ body {
     display: flex;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
+    letter-spacing: 0.2rem;
 
 }
 
@@ -29,7 +30,6 @@ body {
 }
 
 .container {
-    border: 1px solid green;
     height: fit-content;
     background-color: antiquewhite;
     display: flex;
@@ -44,20 +44,26 @@ h1 {
     padding: 2rem;
 }
 #theForm {
-    border: 1px solid blue;
     background-color: #343434;
     color: antiquewhite;
     display: flex;
-    padding: 2rem;
+    padding: 3rem;
     max-width: 100%;
     flex-direction: column;
 }
 
 label {
-    border: 1px solid green;
     margin-bottom: 5%;
 }
 
 input{
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    background-color: #343434;
+    padding: 3%;
+}
+
+input:focus {
+    border-color: #99B080 ;
 }
