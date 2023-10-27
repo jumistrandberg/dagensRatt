@@ -23,7 +23,10 @@ const prisElement = document.createElement('h4');
 veckoDagElement.textContent = veckoDag;
 dagensRattElement.textContent = dagensRatt;
 ingredienserElement.textContent = ingredienser;
-prisElement.textContent = pris + " kr";
+if (prisElement != "") {
+    prisElement.textContent = pris + " kr";
+}
+
 
 // 3. Alla nya element publiseras via appendChild till diven
 
