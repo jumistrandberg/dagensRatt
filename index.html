@@ -17,13 +17,13 @@
 
       <form id="theForm">
         <label for="weekDay">Veckodag:</label>
-        <input id="weekDay" type="text">
+        <input id="weekDay" type="text" required>
         <label for="todayDish">Dagens rätt:</label>
-        <input id="todayDish" type="text">
+        <input id="todayDish" type="text" required>
         <label for="contentDish">Innehåll:</label>
-        <input id="contentDish" type="text">
+        <input id="contentDish" type="text" required>
         <label for="priceDish">Pris:</label>
-        <input id="priceDish" type="number">
+        <input id="priceDish" type="number" min="0" required>
         <button id="sendDish">Skicka</button>
     </form>
 </section>
